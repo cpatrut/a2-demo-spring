@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Ticket} from "./ticket";
+import {HttpService} from "../services/http-service.service";
+import {Response} from "@angular/http";
 
 @Component({
   selector: 'tk-tickets',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TicketsComponent implements OnInit {
 
+  selectedTicket:Ticket;
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

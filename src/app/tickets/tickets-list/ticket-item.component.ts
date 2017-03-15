@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {Ticket} from "../ticket";
 
 @Component({
@@ -8,7 +8,9 @@ import {Ticket} from "../ticket";
 })
 export class TicketItemComponent implements OnInit {
 
-  ticket:Ticket;
+  //will be set from the outside
+  @Input() ticket:Ticket;
+  ticketId;
 
   constructor() { }
 

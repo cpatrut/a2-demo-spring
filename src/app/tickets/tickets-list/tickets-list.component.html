@@ -1,3 +1,12 @@
-<p>
-  tickets-list works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <a class="btn btn-success">New Ticket</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+        <tk-ticket-item [ticket]="ticket" (click) = "onSelected(ticket)"></tk-ticket-item>
+    </ul>
+  </div>
+</div>

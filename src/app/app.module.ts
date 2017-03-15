@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { TicketsListComponent } from './tickets/tickets-list/tickets-list.component';
 import { TicketItemComponent } from './tickets/tickets-list/ticket-item.component';
+import { TicketDetailComponent } from './tickets/ticket-detail/ticket-detail.component';
+import {HttpService} from "./services/http-service.service";
 
 @NgModule({
   declarations: [
@@ -15,14 +17,16 @@ import { TicketItemComponent } from './tickets/tickets-list/ticket-item.componen
     HeaderComponent,
     TicketsComponent,
     TicketsListComponent,
-    TicketItemComponent
+    TicketItemComponent,
+    TicketDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [HttpService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

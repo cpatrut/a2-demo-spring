@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img src="{{selectedTicket?.imagePath}}" alt="TicketImage"  style="max-height: 50px;" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedTicket?.name}}</h1>
+  </div>
+  <div class="col-xs-12">
+    <button class="btn btn-primary">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+    <button class="btn danger">Remove all</button>
+
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <h2><b>Title</b> {{selectedTicket?.title}}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3><b>Description</b> {{selectedTicket?.description}}</h3>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-xs-12">
+  <h3><b>Created at </b> {{selectedTicket?.creationTime}}</h3>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    Comments (in the future)
+  </div>
+</div>
